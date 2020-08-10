@@ -113,7 +113,7 @@ public class DefaultProbeInfoEntityProvider implements IProbeInfoEntityProvider 
             if(!stack.isEmpty()) {
                 probeInfo.horizontal(new LayoutStyle().spacing(10).alignment(ElementAlignment.ALIGN_CENTER))
                         .item(stack, new ItemStyle().width(16).height(16))
-                        .text(INFO + stack.getDisplayName());
+                        .itemLabel(stack);
                 if (mode == ProbeMode.EXTENDED) {
                     probeInfo.text(LABEL + "Rotation: " + INFO + itemFrame.getRotation());
                 }
